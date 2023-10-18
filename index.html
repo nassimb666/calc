@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    
+    <div class="calculator">
+        <div class="title">
+            <h1>
+                Calculator
+            </h1>
+        </div>
+        <input type="text" value="" id="formule" />
+        <div id="result"></div>
+        <div class="button-row">
+            <button onclick="erase()">AC</button>
+            <button onclick="click_touch('/');">/</button>
+            <button onclick="click_touch(7);">7</button>
+            <button onclick="click_touch(8);">8</button>
+            <button onclick="click_touch(9);">9</button>
+        </div>
+        <div class="button-row">
+            <button onclick="click_touch(4);">4</button>
+            <button onclick="click_touch(5);">5</button>
+            <button onclick="click_touch(6);">6</button>
+            <button onclick="click_touch('*');">*</button>
+        </div>
+        <div class="button-row">
+            <button onclick="click_touch(1);">1</button>
+            <button onclick="click_touch(2);">2</button>
+            <button onclick="click_touch(3);">3</button>
+            <button onclick="click_touch('+');">+</button>
+        </div>
+        <div class="button-row">
+            <button class="zero" onclick="click_touch(0);">0</button>
+            <button onclick="click_touch('.');">.</button>
+            <button id="egal" onclick="egal();">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
